@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Web</title>
+    <style>
+        body { background-color: black; color: lime; font-family: monospace; text-align: center; margin-top: 100px; }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+<!-- data disappear by TEAM KBT -->
+<!-- crack my web if you can -->
+
+
+
+
+
+<!-- It is not encrypted it is small logic -->
+<!--Free Website by TEAM KBT-->
+
+<script>
+  // Disable Dev Tools
+  document.addEventListener('keydown', function(e) {
+    if (
+      e.key === 'F12' || 
+      (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+      (e.ctrlKey && e.key === 'U')
+    ) {
+      e.preventDefault();
+      alert('Inspect disabled!');
+    }
+  });
+
+  // Inject hidden content after load
+  setTimeout(() => {
+    document.body.innerHTML += `<h1>Welcome to Secure Site</h1><p>Protected by TEAM KBT</p>`;
+  }, 500);
+</script>
+</body>
+</html>
